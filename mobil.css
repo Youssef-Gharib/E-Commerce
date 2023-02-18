@@ -1,0 +1,291 @@
+/* start media query */
+
+@media(max-width : 799px){
+  #navbar{
+      display: flex;
+      flex-direction: column;
+      justify-content: start!important;
+      align-items: start!important;
+      gap:2.5rem;
+      position: fixed; 
+      top: 0px;
+      right: -300px;
+      height: 100vh;
+      width: 250px;
+      background-color: #E3E6F3;
+      box-shadow: 0px 40px 60px rgb(0, 0, 0, 0.1);
+      padding: 80px 0 0 10px ;
+      transition: .3s;
+  }
+  nav .logo{
+    width: 140px;
+  }
+
+  #mobile a{
+    padding-top: 3px;
+  }
+  #mobile {
+    display: flex;
+    align-items: center;
+    z-index: -1;
+  }
+  #mobile span{
+    font-size: 12px;
+    padding: 2px 7px ;
+  }
+  #mobile svg:hover{
+  color: #088179;
+  }
+  #navbar ul li:nth-child(6){
+    color: #000;;
+  }
+  #close{
+      position: absolute;
+      top: 30px ;
+      left: 30px;
+      display: block;
+      font-size: 30px;
+      transition: all .1s ease-in-out;
+  }
+  #close:hover{
+      transform: scale(.79);
+  }
+  #front{
+    background-position: top 25% right -150px ;
+  }
+  #features {
+      background-position: top 30% right 30%;
+  }
+  #features .fe-box {
+      margin: 15px 15px;
+  }
+  #box-products{
+    justify-content: center !important;
+  }
+  #box-products .pro{
+    margin:30px 40px ;
+  }
+  #banner {
+      height: 25vh;
+  }
+
+  #sm-banner .banner-box {
+      min-width:100%;
+      height: 30vh;
+  }
+  #banner3 {
+      padding: 0 40px;
+  }
+  #banner3 .banner-box {
+      width: 28%;
+      height: 25vh;
+  }
+  #newslatter .form {
+      width: 70%;
+  }
+  #newslatter {
+      display: block;
+  }
+
+  .single-pro-image{
+      width: 100%;
+      margin-right: 50px;
+  }
+  #proDetails{
+      display: flex;
+      flex-direction: column;
+  }
+  #proDetails .single-pro-details{
+      width:100%;
+  }
+  #proDetails .single-pro-details h2{
+      font-size: 30px;
+  }
+  #proDetails .single-pro-details select{
+      padding:  8px 13px;
+  }
+  #proDetails .single-pro-details span{
+      font-size: large;
+  }
+  #proDetails .single-pro-details h6{
+      font-size: large;
+  }
+
+  #blog{
+    padding: 120px 50px 0px 50px;
+  }
+  footer h4{
+    padding-bottom: 5px;
+  }
+  .contact{
+    padding-bottom: 10px;
+  }
+  #follow{
+    margin-top:10px ;
+  }
+  footer .install h4{
+    margin:20px 0 10px 0 ;
+  }
+  footer .install p{
+  margin:  0 0 6px 0;
+  }
+  footer .install .row img{
+    margin: 0px 0 14px 4px ;
+  }
+  #form-details {
+    padding: 2rem;
+  }
+  #form-details form{
+    width: 50%;
+  }
+  #people{
+    width: 45%
+  }
+  #people .people-details{
+    width: 80%;
+  }
+  
+
+}
+
+
+
+@media (max-width: 477px){
+  nav {
+      padding: 20px 20px;
+  }
+  .logo{
+      width: 25%;
+  }
+  #front{
+    height: 70vh;
+    background-position: top 25% right 30% ;
+    padding:0;
+  }
+  #front h4,#front h2, #front h1{
+    line-height: 40px;
+  }
+  #features {
+      padding: 0 20px;
+  }
+  h1 {
+      font-size: 37px;
+  }
+  h2 {
+      font-size: 30px;
+  }
+  #features .fe-box {
+      width: 155px;
+      margin: 0 0 10px 15px ;
+  }
+  .product1 .pro {
+      width: 100%;
+  }
+  #banner{
+    padding-bottom: 30px;
+  }
+  #banner h2 {
+      font-size: 30px;
+  }
+  #banner h4 {
+      font-size: 15px;
+  }
+  #sm-banner{
+    margin: 0 20px ;
+  }
+  #banner3 {
+      display: block;
+      padding: 20px;
+  }
+  #banner3 .banner-box {
+      min-width: 100%;
+      height: 30vh;
+  }
+  
+  .banner-box h2 {
+      font-size: 40px;
+      line-height: 40px;
+  }
+  #newslatter .newstext p {
+      font-size: 12px;
+  }
+  #newslatter .form {
+      width: 90%;
+  }
+/* shope page */
+  .page-banner h2 {
+      font-size: 45px;
+  }
+  .page-banner p{
+      font-size: 17px;
+  }
+/* single product  */
+  #proDetails {
+      display: flex;
+      flex-direction: column;
+  }
+  .single-pro-image {
+      width: 100%;
+      margin-right: 0px;
+  }
+  #proDetails .single-pro-details {
+      width: 100%;
+  }
+/* blog page */
+  #blog {
+      padding: 100px 20px 0 20px;
+  }
+  #blog .blog-box{
+      flex-direction: column;
+      align-items: flex-start;
+      /* border:1px solid; */
+  }
+  #blog .blog-box .blog-img{
+      width: 100%;
+      margin-right: 0px;
+      margin-bottom: 30px;
+  }
+  #blog .blog-details {
+      width: 100%;
+  }
+  
+  /* footer */
+  footer .contact{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  footer h4{
+    padding-bottom: 10px;
+  }
+  #follow{
+    margin-top:14px ;
+  }
+  footer .install .row img{
+    width: 45%; 
+    margin: 5px 5px 10px 5px ;
+  }
+
+  .detail, .imaged {
+    width: 100%;
+  }
+  .detail {
+    padding-left: 0;
+  }
+  #downloadApp .video {
+    width: 100%;
+  }
+  #contact-details .details {
+    width: 100%;
+  }
+  #contact-details .map {
+    width: 100%;
+    height: 30vh;
+  }
+  #form-details form,#people {
+    width: 100%;
+  }
+  #people{
+    margin-top: 2rem;
+  }
+  
+}

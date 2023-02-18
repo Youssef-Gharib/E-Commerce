@@ -1,0 +1,145 @@
+:root{
+    --dark-blue:#19283f;
+    --green:#33d1cc;
+    --red:#ff3150;
+    --yellow:#ffc400; 
+    --section-color:#eff7fa;
+}
+body{
+    font-family:"Roboto",sans-serif; 
+    height: 10000px;
+
+}
+
+/* start nav  */
+.navbar{
+    background-color: var(--dark-blue);
+}
+.navbar-brand{
+    color: antiquewhite;
+    font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus{
+    color: var(--green);
+}
+.search{
+    color: var(--green);
+    border-left:1px solid;
+}
+.navbar-toggler{
+    color: #fff;
+    font-size: 25px;
+    border-color: #fff;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.main-btn{
+    background-color:var(--red);
+    padding: 0.4rem 1.4rem ;
+    border-radius: 18px;
+    color: var(--yellow);
+}
+.main-btn:hover{
+    background-color:rgb(227, 109, 119);
+    color: rgb(37, 35, 35);
+}
+/* end nav */
+
+/* start landing */
+.landing{
+    background-color: var(--dark-blue);
+    min-height: calc(100vh - 72px);
+}
+.h1-landing{
+    font-size:3.7rem;
+}
+/* end landing */
+/* start features */
+.main-title::after{
+    content: "";
+    width:120px;
+    height: 2px;
+    background-color: var(--green);
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+}
+.features .icon-holder{
+    height: 200px;
+}
+.features .icon-holder svg{
+    left: 50%;
+    transform:translateX(-50%);
+}
+.number{
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.icon{
+    font-size: 4rem;
+    color: var(--green);
+}
+.feat h4{
+    color: var(--yellow);
+}
+.feat{
+    padding: 0 20px;
+}
+/* end features */
+/* start our work */
+.our-work{
+  background-color:var(--section-color);
+}
+.our-work ul li{
+  padding: .5rem 1rem;
+  cursor: pointer;
+}
+.our-work ul .active{
+  background-color: var(--red);
+  color: var(--yellow);
+  border-radius: 18px;
+}
+.our-work ul li:not(.active):hover{
+  color: var(--red);
+}
+.our-work .box{
+  padding: 5px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.our-work .box::before{
+  content:attr(data-work);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  background-color: #33d1ccab;
+  width:calc(100% - 10px);
+  height:calc(100% - 10px);
+  transition: .3s;
+  transform: translateX(calc(-100% - 6px));
+}
+.our-work .box:hover::before{
+  transform: translateX(0);
+}
+/* end our work */
+/* start about */
+.des {
+  margin: auto;
+  width: 55%;
+  padding: 10px;
+}
+
+
+/* end about */
